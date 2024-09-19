@@ -1,0 +1,575 @@
+Utils:  Defined LLM in 3.111995s ......
+
+
+D:\Vs coding python\Practice LLM\LLM_ENV\Lib\site-packages\transformers\tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Utils:  Persistant client and vector store client loaded in 15.423405s.......
+
+
+Main: Initializing............
+
+
+Main:  Generating session stare response.......
+
+
+Main:  Generating session state request.......
+
+
+Main:  LLM loaded in 2.148499s.......
+
+
+Main:  Creating Buffer Memory in session.......
+
+
+Main:  writing conversation from session Buffer Memory in 0.0s......
+
+
+conversation =     ConversationChain(memory=ConversationBufferWindowMemory(return_messages=True, k=3), verbose=True, prompt=ChatPromptTemplate(input_variables=['history', 'input'], input_types={'history': typing.List[typing.Union[langchain_core.messages.ai.AIMessage, langchain_core.messages.human.HumanMessage, langchain_core.messages.chat.ChatMessage, langchain_core.messages.system.SystemMessage, langchain_core.messages.function.FunctionMessage, langchain_core.messages.tool.ToolMessage]]}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template="Answer the question as truthfully as possible using the provided context, \nand if the answer is not contained within the text below, say 'I don't know'")), MessagesPlaceholder(variable_name='history'), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{input}'))]), llm=CTransformers(client=<ctransformers.llm.LLM object at 0x00000200FAB24BF0>, model='Model\\llama-2-7b-chat.ggmlv3.q4_0.bin', model_type='llama', config={'max_new_tokens': 100, 'temperature': 0.01, 'context_length': 1600}))
+
+
+Main:  Generating response containter.......
+
+
+Main:  Generating text container.......
+
+
+Main:  Asking for user Query.......
+
+
+Main:  In response container......
+
+
+Main:  Got session state response......
+
+
+Main:  len(st.session_state.responses) =   1 and len(st.session_state.requests) =   0..
+
+
+Main:  Wrote a response message for i = 0......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main: Initializing............
+
+
+Main:  LLM loaded in 1.87042s.......
+
+
+Main:  writing conversation from session Buffer Memory in 0.0s......
+
+
+conversation =     ConversationChain(memory=ConversationBufferWindowMemory(return_messages=True, k=3), verbose=True, prompt=ChatPromptTemplate(input_variables=['history', 'input'], input_types={'history': typing.List[typing.Union[langchain_core.messages.ai.AIMessage, langchain_core.messages.human.HumanMessage, langchain_core.messages.chat.ChatMessage, langchain_core.messages.system.SystemMessage, langchain_core.messages.function.FunctionMessage, langchain_core.messages.tool.ToolMessage]]}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template="Answer the question as truthfully as possible using the provided context, \nand if the answer is not contained within the text below, say 'I don't know'")), MessagesPlaceholder(variable_name='history'), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{input}'))]), llm=CTransformers(client=<ctransformers.llm.LLM object at 0x00000200FA8650D0>, model='Model\\llama-2-7b-chat.ggmlv3.q4_0.bin', model_type='llama', config={'max_new_tokens': 100, 'temperature': 0.01, 'context_length': 1600}))
+
+
+Main:  Generating response containter.......
+
+
+Main:  Generating text container.......
+
+
+Main:  Asking for user Query.......
+
+
+Main:  Got a Query.......
+
+
+Utils:    get_conversation_string is called
+
+
+Utils:    len(st.session_state['responses']) =        1
+Utils:  get_conversation_string executed in 0.0s......
+
+
+Main:  Got Conversation String .......
+
+
+Main:  writing conversation string code.......
+
+
+Utils:         query refiner is called.............
+
+
+conversation =     ''
+query =     'What are the adrenal glands, and what hormones do they produce?'
+
+
+
+Utils:  query refiner response generated in 182.015169s......
+
+
+query refiner response:
+
+     What are the adrenal glands' functions and how do they impact the body's response to stress?
+
+Explanation: The user is interested in learning about the adrenal glands and their role in responding to stress. By refining the query, we can provide a more specific answer that addresses the user's main concern. The revised question focuses on the adrenal glands' functions and how they impact the body's response to
+
+
+
+Main:  Got refined Query.......
+
+
+Main:  writing Refined Query.......
+
+
+Utils:  Find match input =     "\n     What are the adrenal glands' functions and how do they impact the body's response to stress?\n\nExplanation: The user is interested in learning about the adrenal glands and their role in responding to stress. By refining the query, we can provide a more specific answer that addresses the user's main concern. The revised question focuses on the adrenal glands' functions and how they impact the body's response to".......
+
+
+Utils:  found results in 11.078095s......
+
+
+Main:  Context match found.......
+
+
+context:    British Medical Journal 312, no. 7038 (27 Apr. 1996):
+1085+.
+Oelkers, Wolfgang. “Adrenal Insufficiency.” New England
+Journal of Medicine 335, no. 16 (17 Oct. 1996): 1206+.
+ORGANIZATIONS
+National Adrenal Disease Foundation. 505 Northern Boule-
+vard, Suite 200, Great Neck, NY 11021. (516) 487-4992.
+Rosalyn Carson-DeWitt, MD
+GALE ENCYCLOPEDIA OF MEDICINE 2 54Addison’s diseaseGEM - 0001 to 0432 - A  10/22/03 1:41 PM  Page 54
+Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+
+
+
+
+> Entering new ConversationChain chain...
+Prompt after formatting:
+System: Answer the question as truthfully as possible using the provided context,
+and if the answer is not contained within the text below, say 'I don't know'
+Human: Context:
+ British Medical Journal 312, no. 7038 (27 Apr. 1996):
+1085+.
+Oelkers, Wolfgang. “Adrenal Insufficiency.” New England
+Journal of Medicine 335, no. 16 (17 Oct. 1996): 1206+.
+ORGANIZATIONS
+National Adrenal Disease Foundation. 505 Northern Boule-
+vard, Suite 200, Great Neck, NY 11021. (516) 487-4992.
+Rosalyn Carson-DeWitt, MD
+GALE ENCYCLOPEDIA OF MEDICINE 2 54Addison’s diseaseGEM - 0001 to 0432 - A  10/22/03 1:41 PM  Page 54
+Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+
+ Query:
+ What are the adrenal glands, and what hormones do they produce?
+
+> Finished chain.
+Main:  Conversation predicted response in 190.24584s.......
+
+
+Main:  appending query to session state requests......
+
+
+Main:  appending response to session state reasponses......
+
+
+Main:  In response container......
+
+
+Main:  Got session state response......
+
+
+Main:  len(st.session_state.responses) =   2 and len(st.session_state.requests) =   1..
+
+
+Main:  Wrote a response message for i = 0......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main:  Wrote a request message for i = 0......
+
+
+=|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|=
+Main:  Wrote a response message for i = 1......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main: Initializing............
+
+
+Main:  LLM loaded in 2.405819s.......
+
+
+Main:  writing conversation from session Buffer Memory in 0.0s......
+
+
+conversation =     ConversationChain(memory=ConversationBufferWindowMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='Context:\n British Medical Journal 312, no. 7038 (27 Apr. 1996):\n1085+.\nOelkers, Wolfgang. “Adrenal Insufficiency.” New England\nJournal of Medicine 335, no. 16 (17 Oct. 1996): 1206+.\nORGANIZATIONS\nNational Adrenal Disease Foundation. 505 Northern Boule-\nvard, Suite 200, Great Neck, NY 11021. (516) 487-4992.\nRosalyn Carson-DeWitt, MD\nGALE ENCYCLOPEDIA OF MEDICINE 2 54Addison’s diseaseGEM - 0001 to 0432 - A  10/22/03 1:41 PM  Page 54\nCortisol —A hormone produced by the adrenal\ncortex. It is partially responsible for regulatingblood sugar levels.\nDiabetes —A disease characterized by low blood\nsugar.\nEpinephrine —A hormone produced by the adren-\nal medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.\nLaparoscopy —The insertion of a tube through the \n\n Query:\n What are the adrenal glands, and what hormones do they produce?'), AIMessage(content='\n\nSystem: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.')]), return_messages=True, k=3), verbose=True, prompt=ChatPromptTemplate(input_variables=['history', 'input'], input_types={'history': typing.List[typing.Union[langchain_core.messages.ai.AIMessage, langchain_core.messages.human.HumanMessage, langchain_core.messages.chat.ChatMessage, langchain_core.messages.system.SystemMessage, langchain_core.messages.function.FunctionMessage, langchain_core.messages.tool.ToolMessage]]}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template="Answer the question as truthfully as possible using the provided context, \nand if the answer is not contained within the text below, say 'I don't know'")), MessagesPlaceholder(variable_name='history'), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{input}'))]), llm=CTransformers(client=<ctransformers.llm.LLM object at 0x000001FF80034DA0>, model='Model\\llama-2-7b-chat.ggmlv3.q4_0.bin', model_type='llama', config={'max_new_tokens': 100, 'temperature': 0.01, 'context_length': 1600}))
+
+
+Main:  Generating response containter.......
+
+
+Main:  Generating text container.......
+
+
+Main:  Asking for user Query.......
+
+
+Main:  Got a Query.......
+
+
+Utils:    get_conversation_string is called
+
+
+Utils:    len(st.session_state['responses']) =        2
+0th conv:           Human: What are the adrenal glands, and what hormones do they produce?
+
+0th conv:           Human: What are the adrenal glands, and what hormones do they produce?
+Bot:
+
+System: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.
+
+Utils:  get_conversation_string executed in 0.001s......
+
+
+Main:  Got Conversation String .......
+
+
+Main:  writing conversation string code.......
+
+
+Utils:         query refiner is called.............
+
+
+conversation =     'Human: What are the adrenal glands, and what hormones do they produce?\nBot: \n\nSystem: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.\n'
+query =     'How do these hormones affect the body’s response to stress?'
+
+
+
+Utils:  query refiner response generated in 110.411333s......
+
+
+query refiner response:
+  What are the effects of cortisol, epinephrine, and norepinephrine on the body's response to stress?
+
+Answer from Knowledge Base: The hormones produced by the adrenal glands play a crucial role in the body's response to stress. Cortisol helps regulate blood sugar levels, epinephrine is important in the "fight or flight" response, and norepinephrine partially regulates heart rate
+
+
+
+Main:  Got refined Query.......
+
+
+Main:  writing Refined Query.......
+
+
+Utils:  Find match input =     ' What are the effects of cortisol, epinephrine, and norepinephrine on the body\'s response to stress?\n\nAnswer from Knowledge Base: The hormones produced by the adrenal glands play a crucial role in the body\'s response to stress. Cortisol helps regulate blood sugar levels, epinephrine is important in the "fight or flight" response, and norepinephrine partially regulates heart rate'.......
+
+
+Utils:  found results in 5.652868s......
+
+
+Main:  Context match found.......
+
+
+context:    Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+a realisticphysical threat and an anxiety-producing thought or idea.The hypothalamus may trigger the release of stress hor-mones by the pituitary gland, even when there is noexternal and objective danger. A second problem iscaused by the biochemical side effects of too many “falsealarms” in the ANS. When a person responds to a realdanger, his or her body gets rid of the stress hormones byrunning away or by fighting. In modern life, however,people often have fight-or-flight reactions in
+
+
+
+
+> Entering new ConversationChain chain...
+Prompt after formatting:
+System: Answer the question as truthfully as possible using the provided context,
+and if the answer is not contained within the text below, say 'I don't know'
+Human: Context:
+ British Medical Journal 312, no. 7038 (27 Apr. 1996):
+1085+.
+Oelkers, Wolfgang. “Adrenal Insufficiency.” New England
+Journal of Medicine 335, no. 16 (17 Oct. 1996): 1206+.
+ORGANIZATIONS
+National Adrenal Disease Foundation. 505 Northern Boule-
+vard, Suite 200, Great Neck, NY 11021. (516) 487-4992.
+Rosalyn Carson-DeWitt, MD
+GALE ENCYCLOPEDIA OF MEDICINE 2 54Addison’s diseaseGEM - 0001 to 0432 - A  10/22/03 1:41 PM  Page 54
+Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+
+ Query:
+ What are the adrenal glands, and what hormones do they produce?
+AI:
+
+System: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.
+Human: Context:
+ Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+a realisticphysical threat and an anxiety-producing thought or idea.The hypothalamus may trigger the release of stress hor-mones by the pituitary gland, even when there is noexternal and objective danger. A second problem iscaused by the biochemical side effects of too many “falsealarms” in the ANS. When a person responds to a realdanger, his or her body gets rid of the stress hormones byrunning away or by fighting. In modern life, however,people often have fight-or-flight reactions in
+
+ Query:
+ How do these hormones affect the body’s response to stress?
+
+> Finished chain.
+Main:  Conversation predicted response in 269.827609s.......
+
+
+Main:  appending query to session state requests......
+
+
+Main:  appending response to session state reasponses......
+
+
+Main:  In response container......
+
+
+Main:  Got session state response......
+
+
+Main:  len(st.session_state.responses) =   3 and len(st.session_state.requests) =   2..
+
+
+Main:  Wrote a response message for i = 0......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main:  Wrote a request message for i = 0......
+
+
+=|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|=
+Main:  Wrote a response message for i = 1......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main:  Wrote a request message for i = 1......
+
+
+=|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|=
+Main:  Wrote a response message for i = 2......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main: Initializing............
+
+
+Main:  LLM loaded in 2.426126s.......
+
+
+Main:  writing conversation from session Buffer Memory in 0.0s......
+
+
+conversation =     ConversationChain(memory=ConversationBufferWindowMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='Context:\n British Medical Journal 312, no. 7038 (27 Apr. 1996):\n1085+.\nOelkers, Wolfgang. “Adrenal Insufficiency.” New England\nJournal of Medicine 335, no. 16 (17 Oct. 1996): 1206+.\nORGANIZATIONS\nNational Adrenal Disease Foundation. 505 Northern Boule-\nvard, Suite 200, Great Neck, NY 11021. (516) 487-4992.\nRosalyn Carson-DeWitt, MD\nGALE ENCYCLOPEDIA OF MEDICINE 2 54Addison’s diseaseGEM - 0001 to 0432 - A  10/22/03 1:41 PM  Page 54\nCortisol —A hormone produced by the adrenal\ncortex. It is partially responsible for regulatingblood sugar levels.\nDiabetes —A disease characterized by low blood\nsugar.\nEpinephrine —A hormone produced by the adren-\nal medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.\nLaparoscopy —The insertion of a tube through the \n\n Query:\n What are the adrenal glands, and what hormones do they produce?'), AIMessage(content='\n\nSystem: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.'), HumanMessage(content='Context:\n Cortisol —A hormone produced by the adrenal\ncortex. It is partially responsible for regulatingblood sugar levels.\nDiabetes —A disease characterized by low blood\nsugar.\nEpinephrine —A hormone produced by the adren-\nal medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.\nLaparoscopy —The insertion of a tube through the\na realisticphysical threat and an anxiety-producing thought or idea.The hypothalamus may trigger the release of stress hor-mones by the pituitary gland, even when there is noexternal and objective danger. A second problem iscaused by the biochemical side effects of too many “falsealarms” in the ANS. When a person responds to a realdanger, his or her body gets rid of the stress hormones byrunning away or by fighting. In modern life, however,people often have fight-or-flight reactions in \n\n Query:\n How do these hormones affect the body’s response to stress?'), AIMessage(content="\nAI: \n\nSystem: The hormones produced by the adrenal glands, cortisol, epinephrine, and norepinephrine, play a crucial role in the body's response to stress. When the hypothalamus detects a physical threat or an anxiety-producing thought, it triggers the release of these hormones from the pituitary gland. Cortisol helps regulate blood sugar levels, ep")]), return_messages=True, k=3), verbose=True, prompt=ChatPromptTemplate(input_variables=['history', 'input'], input_types={'history': typing.List[typing.Union[langchain_core.messages.ai.AIMessage, langchain_core.messages.human.HumanMessage, langchain_core.messages.chat.ChatMessage, langchain_core.messages.system.SystemMessage, langchain_core.messages.function.FunctionMessage, langchain_core.messages.tool.ToolMessage]]}, messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template="Answer the question as truthfully as possible using the provided context, \nand if the answer is not contained within the text below, say 'I don't know'")), MessagesPlaceholder(variable_name='history'), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{input}'))]), llm=CTransformers(client=<ctransformers.llm.LLM object at 0x000001FF80037F80>, model='Model\\llama-2-7b-chat.ggmlv3.q4_0.bin', model_type='llama', config={'max_new_tokens': 100, 'temperature': 0.01, 'context_length': 1600}))
+
+
+Main:  Generating response containter.......
+
+
+Main:  Generating text container.......
+
+
+Main:  Asking for user Query.......
+
+
+Main:  Got a Query.......
+
+
+Utils:    get_conversation_string is called
+
+
+Utils:    len(st.session_state['responses']) =        3
+0th conv:           Human: What are the adrenal glands, and what hormones do they produce?
+
+0th conv:           Human: What are the adrenal glands, and what hormones do they produce?
+Bot:
+
+System: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.
+
+1th conv:           Human: What are the adrenal glands, and what hormones do they produce?
+Bot:
+
+System: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.
+Human: How do these hormones affect the body’s response to stress?
+
+1th conv:           Human: What are the adrenal glands, and what hormones do they produce?
+Bot:
+
+System: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.
+Human: How do these hormones affect the body’s response to stress?
+Bot:
+AI:
+
+System: The hormones produced by the adrenal glands, cortisol, epinephrine, and norepinephrine, play a crucial role in the body's response to stress. When the hypothalamus detects a physical threat or an anxiety-producing thought, it triggers the release of these hormones from the pituitary gland. Cortisol helps regulate blood sugar levels, ep
+
+Utils:  get_conversation_string executed in 0.002859s......
+
+
+Main:  Got Conversation String .......
+
+
+Main:  writing conversation string code.......
+
+
+Utils:         query refiner is called.............
+
+
+conversation =     "Human: What are the adrenal glands, and what hormones do they produce?\nBot: \n\nSystem: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.\nHuman: How do these hormones affect the body’s response to stress?\nBot: \nAI: \n\nSystem: The hormones produced by the adrenal glands, cortisol, epinephrine, and norepinephrine, play a crucial role in the body's response to stress. When the hypothalamus detects a physical threat or an anxiety-producing thought, it triggers the release of these hormones from the pituitary gland. Cortisol helps regulate blood sugar levels, ep\n"
+query =     'What are the physiological changes that occur in the body due to the release of these hormones during a stressful situation?'
+
+
+
+Utils:  query refiner response generated in 149.453427s......
+
+
+query refiner response:
+
+     How do cortisol, epinephrine, and norepinephrine affect heart rate, blood pressure, and metabolism during a stressful situation?
+
+Answer : The release of cortisol, epinephrine, and norepinephrine during a stressful situation can cause an increase in heart rate, blood pressure, and metabolism. Cortisol helps regulate blood sugar levels, while epinephrine and norepinephrine
+
+
+
+Main:  Got refined Query.......
+
+
+Main:  writing Refined Query.......
+
+
+Utils:  Find match input =     '\n     How do cortisol, epinephrine, and norepinephrine affect heart rate, blood pressure, and metabolism during a stressful situation?\n\nAnswer : The release of cortisol, epinephrine, and norepinephrine during a stressful situation can cause an increase in heart rate, blood pressure, and metabolism. Cortisol helps regulate blood sugar levels, while epinephrine and norepinephrine'.......
+
+
+Utils:  found results in 7.335472s......
+
+
+Main:  Context match found.......
+
+
+context:    Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+a realisticphysical threat and an anxiety-producing thought or idea.The hypothalamus may trigger the release of stress hor-mones by the pituitary gland, even when there is noexternal and objective danger. A second problem iscaused by the biochemical side effects of too many “falsealarms” in the ANS. When a person responds to a realdanger, his or her body gets rid of the stress hormones byrunning away or by fighting. In modern life, however,people often have fight-or-flight reactions in
+
+
+
+
+> Entering new ConversationChain chain...
+Prompt after formatting:
+System: Answer the question as truthfully as possible using the provided context,
+and if the answer is not contained within the text below, say 'I don't know'
+Human: Context:
+ British Medical Journal 312, no. 7038 (27 Apr. 1996):
+1085+.
+Oelkers, Wolfgang. “Adrenal Insufficiency.” New England
+Journal of Medicine 335, no. 16 (17 Oct. 1996): 1206+.
+ORGANIZATIONS
+National Adrenal Disease Foundation. 505 Northern Boule-
+vard, Suite 200, Great Neck, NY 11021. (516) 487-4992.
+Rosalyn Carson-DeWitt, MD
+GALE ENCYCLOPEDIA OF MEDICINE 2 54Addison’s diseaseGEM - 0001 to 0432 - A  10/22/03 1:41 PM  Page 54
+Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+
+ Query:
+ What are the adrenal glands, and what hormones do they produce?
+AI:
+
+System: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate various bodily functions. The adrenal glands produce cortisol, epinephrine, and norepinephrine. Cortisol helps regulate blood sugar levels, epinephrine is important in the response to stress, and norepinephrine partially regulates heart rate and metabolism.
+Human: Context:
+ Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+a realisticphysical threat and an anxiety-producing thought or idea.The hypothalamus may trigger the release of stress hor-mones by the pituitary gland, even when there is noexternal and objective danger. A second problem iscaused by the biochemical side effects of too many “falsealarms” in the ANS. When a person responds to a realdanger, his or her body gets rid of the stress hormones byrunning away or by fighting. In modern life, however,people often have fight-or-flight reactions in
+
+ Query:
+ How do these hormones affect the body’s response to stress?
+AI:
+AI:
+
+System: The hormones produced by the adrenal glands, cortisol, epinephrine, and norepinephrine, play a crucial role in the body's response to stress. When the hypothalamus detects a physical threat or an anxiety-producing thought, it triggers the release of these hormones from the pituitary gland. Cortisol helps regulate blood sugar levels, ep
+Human: Context:
+ Cortisol —A hormone produced by the adrenal
+cortex. It is partially responsible for regulatingblood sugar levels.
+Diabetes —A disease characterized by low blood
+sugar.
+Epinephrine —A hormone produced by the adren-
+al medulla. It is important in the response to stressand partially regulates heart rate and metabolism.It is also called adrenaline.
+Laparoscopy —The insertion of a tube through the
+a realisticphysical threat and an anxiety-producing thought or idea.The hypothalamus may trigger the release of stress hor-mones by the pituitary gland, even when there is noexternal and objective danger. A second problem iscaused by the biochemical side effects of too many “falsealarms” in the ANS. When a person responds to a realdanger, his or her body gets rid of the stress hormones byrunning away or by fighting. In modern life, however,people often have fight-or-flight reactions in
+
+ Query:
+ What are the physiological changes that occur in the body due to the release of these hormones during a stressful situation?
+
+> Finished chain.
+Main:  Conversation predicted response in 539.827615s.......
+
+
+Main:  appending query to session state requests......
+
+
+Main:  appending response to session state reasponses......
+
+
+Main:  In response container......
+
+
+Main:  Got session state response......
+
+
+Main:  len(st.session_state.responses) =   4 and len(st.session_state.requests) =   3..
+
+
+Main:  Wrote a response message for i = 0......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main:  Wrote a request message for i = 0......
+
+
+=|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|=
+Main:  Wrote a response message for i = 1......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main:  Wrote a request message for i = 1......
+
+
+=|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|=
+Main:  Wrote a response message for i = 2......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=
+Main:  Wrote a request message for i = 2......
+
+
+=|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|==|=
+Main:  Wrote a response message for i = 3......
+
+
+=x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x==x=

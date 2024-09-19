@@ -1,0 +1,6 @@
+ctransformers
+langchain-huggingface
+pypdf
+langchain-weaviate
+weaviate-client
+streamlit-chat
