@@ -5,6 +5,9 @@ chroma_langchain_medinfo_db
 Data_files/Earnings.csv
 Data_files/plugin-redoc-0.yaml
 Data_files/titanic_space.csv
+Data_files/ML-offer.pdf
+Data_files/pic1.jpg
+Data_files/pic2.jpg
 location
 Model
 constants.yaml
@@ -19,3 +22,7 @@ third_notebook.ipynb
 weaviate_check.ipynb
 weaviate_retrieve_mistral.ipynb
 weaviate_retrieve.ipynb
+Chroma Research
+Latest RAG
+Weaviate
+.env

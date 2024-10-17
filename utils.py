@@ -7,6 +7,7 @@ from langchain_community.vectorstores import Chroma
 from datetime import datetime
 
 
+
 start1 = datetime.now()
 
 llm_utils = CTransformers(model = r'Model\llama-2-7b-chat.ggmlv3.q4_0.bin',
@@ -43,14 +44,14 @@ def find_match(input: str):
 
 
 def query_refiner(conversation, query):
-    print("Utils:         query refiner is called.............\n\n")
+    print("Utils: query refiner is called.............\n\n")
     print(f"{conversation =     }")
     print(f"{query =     }")
     print('\n\n')
     start3 = datetime.now()
 
     template = """ Given the following user query and conversion log, formulate a question that would be the most
-                relevant to provide the user with  an answer from a knowledge base.
+                relevant to provide the user with  an answer from a knowledge base. Do not create extra text.
                 
                 Conversation Log : 
                 {conversation} 
