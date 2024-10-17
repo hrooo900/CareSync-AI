@@ -18,7 +18,7 @@ The main problem being solved is providing users with accurate, personalized med
 
 ## Screenshots
 
-![s1](https://github.com/hrooo900/Medical-ChatBot/blob/main/s1.png)
+![s1](https://github.com/hrooo900/CareSync-AI/blob/main/Data_files/s1.png)
 
 ![s2](https://github.com/hrooo900/Medical-ChatBot/blob/main/s2.png)
 
