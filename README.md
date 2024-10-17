@@ -20,7 +20,7 @@ The main problem being solved is providing users with accurate, personalized med
 
 ![s1](https://github.com/hrooo900/CareSync-AI/blob/main/Data_files/s1.png)
 
-![s2](https://github.com/hrooo900/Medical-ChatBot/blob/main/s2.png)
+![s2](https://github.com/hrooo900/CareSync-AI/blob/main/Data_files/s2.png)
 
-![s3](https://github.com/hrooo900/Medical-ChatBot/blob/main/s3.png)
+![s3](https://github.com/hrooo900/CareSync-AI/blob/main/Data_files/s3.png)
 
